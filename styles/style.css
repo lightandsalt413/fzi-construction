@@ -38,7 +38,12 @@ button,input,select,textarea{font-family:inherit;font-size:inherit;border:none;o
 .nav{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:16px 0;transition:all var(--transition)}
 .nav.scrolled{background:rgba(10,15,13,.92);backdrop-filter:blur(20px);border-bottom:1px solid rgba(64,145,108,.15);padding:10px 0}
 .nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
-.nav-logo{font-family:var(--font-heading);font-size:28px;font-weight:800;color:var(--green-light);letter-spacing:2px}
+.nav-logo,.footer-logo{display:flex;align-items:center;gap:10px;text-decoration:none;transition:all var(--transition)}
+.nav-logo:hover,.footer-logo:hover{transform:translateY(-1px)}
+.nav-logo:hover .logo-icon,.footer-logo:hover .logo-icon{filter:drop-shadow(0 0 8px rgba(82,183,136,.5))}
+.logo-icon{flex-shrink:0;transition:filter var(--transition)}
+.logo-text{font-family:var(--font-heading);font-size:26px;font-weight:800;color:var(--green-light);letter-spacing:3px;line-height:1;display:flex;flex-direction:column}
+.logo-sub{font-size:8px;font-weight:600;color:var(--gold);letter-spacing:4px;margin-top:2px;opacity:.9}
 .nav-links{display:flex;align-items:center;gap:32px}
 .nav-link{font-size:14px;font-weight:500;color:var(--text-secondary);transition:color var(--transition);letter-spacing:.3px}
 .nav-link:hover{color:var(--white)}
@@ -161,7 +166,7 @@ button,input,select,textarea{font-family:inherit;font-size:inherit;border:none;o
 /* ===== FOOTER ===== */
 .footer{background:var(--card-bg);border-top:1px solid rgba(82,183,136,.1);padding:80px 0 0}
 .footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid rgba(82,183,136,.08)}
-.footer-logo{font-family:var(--font-heading);font-size:32px;font-weight:800;color:var(--green-light);letter-spacing:2px;display:inline-block;margin-bottom:16px}
+.footer-logo{margin-bottom:16px}
 .footer-tagline{font-size:14px;color:var(--text-secondary);line-height:1.7;margin-bottom:12px}
 .footer-faith{font-size:13px;color:var(--gold);font-style:italic;margin-bottom:20px}
 .footer-socials{display:flex;gap:12px}
