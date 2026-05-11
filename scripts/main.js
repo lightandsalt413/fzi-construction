@@ -2,7 +2,13 @@
 (function(){
   'use strict';
 
-  // === NAV SCROLL ===
+  // === PAGE LOADER ===
+  const loader = document.getElementById('pageLoader');
+  window.addEventListener('load', () => {
+    setTimeout(() => { loader.classList.add('hidden'); }, 800);
+  });
+  // Fallback: hide after 3s max
+  setTimeout(() => { if(loader) loader.classList.add('hidden'); }, 3000);
   const nav = document.getElementById('nav');
   const handleNavScroll = () => {
     nav.classList.toggle('scrolled', window.scrollY > 60);

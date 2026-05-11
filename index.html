@@ -27,6 +27,20 @@
 </head>
 <body>
 
+  <!-- ========== PAGE LOADER ========== -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-content">
+      <svg class="loader-logo" width="60" height="60" viewBox="0 0 36 36" fill="none">
+        <rect x="2" y="14" width="10" height="20" rx="1" fill="#2D6A4F"/>
+        <rect x="13" y="6" width="10" height="28" rx="1" fill="#40916C"/>
+        <rect x="24" y="10" width="10" height="24" rx="1" fill="#52B788"/>
+        <rect x="0" y="33" width="36" height="3" rx="1" fill="#D4A853"/>
+        <polygon points="18,0 13,6 23,6" fill="#52B788"/>
+      </svg>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
   <!-- ========== NAVIGATION ========== -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
@@ -81,7 +95,7 @@
   <!-- ========== HERO SECTION ========== -->
   <section class="hero" id="hero">
     <div class="hero-bg">
-      <img src="assets/images/hero-bg.png" alt="FZI Construction Site" class="hero-bg-img">
+      <img src="assets/images/hero-bg.png" alt="FZI Construction Site" class="hero-bg-img" decoding="async" fetchpriority="high">
     </div>
     <div class="hero-overlay"></div>
     <div class="hero-grid-pattern"></div>
@@ -121,7 +135,7 @@
     <div class="container">
       <div class="about-grid">
         <div class="about-img-wrap rv">
-          <img src="assets/images/about-img.png" alt="FZI Construction Team" class="about-img">
+          <img src="assets/images/about-img.png" alt="FZI Construction Team" class="about-img" loading="lazy" decoding="async">
           <div class="about-img-badge">
             <span class="badge-num">20+</span>
             <span class="badge-text">Years of<br>Excellence</span>
@@ -216,7 +230,7 @@
       <div class="projects-grid">
         <div class="project-card rv">
           <div class="project-img-wrap">
-            <img src="assets/images/project-1.png" alt="Davao Commercial Complex" class="project-img">
+            <img src="assets/images/project-1.png" alt="Davao Commercial Complex" class="project-img" loading="lazy" decoding="async">
             <div class="project-overlay">
               <span class="project-tag">Commercial</span>
               <h3 class="project-name">Davao Commercial Complex</h3>
@@ -226,7 +240,7 @@
         </div>
         <div class="project-card rv d1">
           <div class="project-img-wrap">
-            <img src="assets/images/project-2.png" alt="Tagum City Residences" class="project-img">
+            <img src="assets/images/project-2.png" alt="Tagum City Residences" class="project-img" loading="lazy" decoding="async">
             <div class="project-overlay">
               <span class="project-tag">Residential</span>
               <h3 class="project-name">Tagum City Residences</h3>
@@ -236,7 +250,7 @@
         </div>
         <div class="project-card rv d2">
           <div class="project-img-wrap">
-            <img src="assets/images/project-3.png" alt="Mindanao Logistics Hub" class="project-img">
+            <img src="assets/images/project-3.png" alt="Mindanao Logistics Hub" class="project-img" loading="lazy" decoding="async">
             <div class="project-overlay">
               <span class="project-tag">Industrial</span>
               <h3 class="project-name">Mindanao Logistics Hub</h3>

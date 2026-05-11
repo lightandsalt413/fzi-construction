@@ -17,6 +17,16 @@
   --transition: .35s cubic-bezier(.4,0,.2,1);
 }
 
+/* ===== PAGE LOADER ===== */
+.page-loader{position:fixed;inset:0;z-index:9999;background:var(--dark-bg);display:flex;align-items:center;justify-content:center;transition:opacity .5s ease,visibility .5s ease}
+.page-loader.hidden{opacity:0;visibility:hidden;pointer-events:none}
+.loader-content{display:flex;flex-direction:column;align-items:center;gap:24px}
+.loader-logo{animation:loaderPulse 1.2s ease infinite}
+@keyframes loaderPulse{0%,100%{opacity:.5;transform:scale(.95)}50%{opacity:1;transform:scale(1)}}
+.loader-bar{width:120px;height:3px;background:rgba(82,183,136,.15);border-radius:4px;overflow:hidden}
+.loader-fill{width:0;height:100%;background:linear-gradient(90deg,var(--green-primary),var(--green-light));border-radius:4px;animation:loaderFill 1.5s ease forwards}
+@keyframes loaderFill{0%{width:0}100%{width:100%}}
+
 /* ===== RESET ===== */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
