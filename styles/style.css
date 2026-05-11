@@ -206,27 +206,28 @@ button,input,select,textarea{font-family:inherit;font-size:inherit;border:none;o
   .nav-links{display:none}
   .hamburger{display:flex}
   /* Nav logo smaller on mobile */
-  .logo-img{width:34px;height:34px}
-  .logo-text{font-size:20px;letter-spacing:2px}
-  .logo-sub{font-size:7px;letter-spacing:3px}
+  .logo-img{width:32px;height:32px}
+  .logo-text{font-size:18px;letter-spacing:1.5px}
+  .logo-sub{font-size:6px;letter-spacing:2px}
   /* Hero adjustments */
   .hero{min-height:100svh}
-  .hero-content{padding:0 20px;padding-top:70px}
-  .hero-tag{font-size:11px;letter-spacing:2px;margin-bottom:14px}
-  .hero-title{font-size:clamp(28px,8vw,42px);margin-bottom:16px}
-  .hero-sub{font-size:14px;margin-bottom:28px;line-height:1.6}
+  .hero-content{padding:0 20px;margin-top:80px}
+  /* Hide hero-tag on mobile - duplicates nav logo text */
+  .hero-tag{display:none}
+  .hero-title{font-size:clamp(26px,7.5vw,38px);margin-bottom:14px}
+  .hero-sub{font-size:13px;margin-bottom:24px;line-height:1.6}
   .hero-sub br{display:none}
-  /* Stats: horizontal row on mobile */
-  .hero-stats{flex-direction:row;flex-wrap:wrap;justify-content:center;gap:12px;padding:16px 20px;margin-top:32px}
-  .stat-divider{width:1px;height:36px}
-  .stat-num{font-size:24px}
-  .stat-plus{font-size:16px}
-  .stat-label{font-size:10px;letter-spacing:.3px}
-  /* Hide scroll indicator on mobile to prevent overlap */
+  /* Buttons side by side */
+  .hero-btns{gap:10px;flex-wrap:nowrap}
+  .btn{padding:11px 20px;font-size:13px;white-space:nowrap}
+  /* Stats: compact horizontal row */
+  .hero-stats{flex-direction:row;flex-wrap:nowrap;justify-content:center;gap:16px;padding:16px 14px;margin-top:24px;width:auto}
+  .stat-divider{width:1px;height:32px}
+  .stat-num{font-size:20px}
+  .stat-plus{font-size:14px}
+  .stat-label{font-size:9px;letter-spacing:.2px}
+  /* Hide scroll indicator on mobile */
   .hero-scroll{display:none}
-  /* Buttons */
-  .hero-btns{gap:12px}
-  .btn{padding:12px 24px;font-size:14px}
   /* Sections */
   .about-cards{grid-template-columns:1fr}
   .services-grid{grid-template-columns:1fr}
