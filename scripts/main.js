@@ -41,7 +41,11 @@
       }
     });
   }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-  revealEls.forEach(el => observer.observe(el));
+
+  // Start observing only after loader is hidden
+  setTimeout(() => {
+    revealEls.forEach(el => observer.observe(el));
+  }, 850); // Matches the loader timeout + slight buffer
 
   // === STAT COUNTER ===
   const counters = document.querySelectorAll('.stat-num');
