@@ -50,9 +50,8 @@ button,input,select,textarea{font-family:inherit;font-size:inherit;border:none;o
 .nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
 .nav-logo,.footer-logo{display:flex;align-items:center;gap:10px;text-decoration:none;transition:all var(--transition)}
 .nav-logo:hover,.footer-logo:hover{transform:translateY(-1px)}
-.nav-logo:hover .logo-img,.footer-logo:hover .logo-img{filter:drop-shadow(0 0 8px rgba(82,183,136,.5))}
-.logo-img{width:44px;height:44px;object-fit:contain;flex-shrink:0;transition:filter var(--transition);background:transparent}
-.logo-img-lg{width:56px;height:56px}
+.nav-logo:hover .logo-icon,.footer-logo:hover .logo-icon{filter:drop-shadow(0 0 8px rgba(82,183,136,.5))}
+.logo-icon{flex-shrink:0;transition:filter var(--transition)}
 .logo-text{font-family:var(--font-heading);font-size:26px;font-weight:800;color:var(--green-light);letter-spacing:3px;line-height:1;display:flex;flex-direction:column}
 .logo-sub{font-size:8px;font-weight:600;color:var(--gold);letter-spacing:4px;margin-top:2px;opacity:.9}
 .nav-links{display:flex;align-items:center;gap:32px}
