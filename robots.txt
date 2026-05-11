@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lightandsalt413.github.io/fzi-construction/sitemap.xml
